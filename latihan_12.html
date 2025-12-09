@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bakul Sayur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+      .carousel-item img {
+        height: 380px;
+        object-fit: cover;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success" href="#">Bakul Sayur</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-success" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-success" href="#produk">Produk</a></li>
+            <li class="nav-item"><a class="nav-link text-success" href="#login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="p-5 mb-4 bg-success text-white text-center rounded-3">
+      <h1 class="display-4 fw-bold">BAKUL SAYUR</h1>
+      <p class="lead">Rekomendasi sayur sayuran nichhh</p>
+      <button class="btn btn-light btn-lg">Lihat Promo</button>
+    </div>
+
+    <div class="container">
+      <div class="alert alert-success text-center fw-bold">
+        Promo Akhir Tahun! Diskon hingga 30% untuk semua sayuran segar!
+      </div>
+    </div>
+
+    <div class="container mb-4">
+      <div id="sayurCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="jagung.jpg" class="d-block w-100 rounded" alt="Jagung">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jagung Manis</h5>
+              <p>Jagung segar dengan rasa manis alami.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="timun.jpg" class="d-block w-100 rounded" alt="Timun">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Timun Hijau</h5>
+              <p>Cocok untuk lalapan dan minuman segar.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="tomat.jpg" class="d-block w-100 rounded" alt="Tomat">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tomat Merah</h5>
+              <p>Sumber vitamin C dan antioksidan.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#sayurCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#sayurCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <h3>Jagung</h3>
+          <p>Sumber karbohidrat alami, cocok untuk rebus, bakar, dan sop.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Timun</h3>
+          <p>Kaya air, cocok untuk lalapan, acar, jus, dan masker wajah.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Tomat</h3>
+          <p>Kaya vitamin C dan antioksidan, cocok untuk sayur, salad, dan jus.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="produk">
+      <h3 class="mb-3">Produk Sayuran</h3>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="tomat.jpg" class="card-img-top" alt="Tomat">
+            <div class="card-body">
+              <h5 class="card-title">Tomat Segar</h5>
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+              </div>
+              <p class="card-text">Tomat merah pilihan terbaik.</p>
+              <a href="#" class="btn btn-success">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="timun.jpg" class="card-img-top" alt="Timun">
+            <div class="card-body">
+              <h5 class="card-title">Timun Hijau</h5>
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+              </div>
+              <p class="card-text">Cocok untuk lalapan dan jus.</p>
+              <a href="#" class="btn btn-success">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="jagung.jpg" class="card-img-top" alt="Jagung">
+            <div class="card-body">
+              <h5 class="card-title">Jagung Manis</h5>
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="card-text">Manis alami dan segar.</p>
+              <a href="#" class="btn btn-success">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5" id="login">
+      <h3 class="mb-3">Login Akun</h3>
+
+      <div class="card p-4 shadow-sm">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="Masukkan username">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Masukkan password">
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
